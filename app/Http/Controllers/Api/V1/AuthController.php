@@ -15,7 +15,7 @@ class AuthController
         }
 
         return response()->json([
-            'error' => 'Unauthorized'
+            'error' => 'Unauthorized',
         ], 401);
     }
 

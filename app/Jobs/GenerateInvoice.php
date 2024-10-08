@@ -20,7 +20,7 @@ class GenerateInvoice implements ShouldQueue
     {
         $html = view('order.pdf', ['order' => $this->order])->render();
 
-        $pdf = new Dompdf();
+        $pdf = new Dompdf;
         $pdf->loadHtml($html);
         $pdf->setPaper('A4');
         $pdf->render();
