@@ -2,13 +2,17 @@
 
 # Inicio
 
-APP_PORT=8000 ./vendor/bin/sail up -d
-./vendor/bin/sail artisan migrate
-./vendor/bin/sail artisan db:seed
+```sh
+$ APP_PORT=8000 ./vendor/bin/sail up -d
+$ ./vendor/bin/sail artisan migrate
+$ ./vendor/bin/sail artisan db:seed
+```
 
 ## Tests
 
-./vendor/bin/sail artisan test
+```sh
+$ ./vendor/bin/sail artisan test
+```
 
 ## Documentación
 
