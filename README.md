@@ -6,6 +6,7 @@
 $ APP_PORT=8000 ./vendor/bin/sail up -d
 $ ./vendor/bin/sail artisan migrate
 $ ./vendor/bin/sail artisan db:seed
+$ ./vendor/bin/sail artisan jwt:secret --force
 ```
 
 ## Tests
@@ -16,8 +17,15 @@ $ ./vendor/bin/sail artisan test
 
 ## Documentación
 
-- http://localhost:8000/docs/api
-- http://localhost:8000/docs/api.json
+- UI Viewer: http://localhost:8000/docs/api
+- Open API JSON: http://localhost:8000/docs/api.json
+
+## Packages
+
+- [Scramble](https://scramble.dedoc.co)
+- [DomPdf](https://dompdf.github.io/)
+- [HashIds](https://github.com/vinkla/hashids)
+- [JWT Auth](https://github.com/PHP-Open-Source-Saver/jwt-auth)
 
 ## Objetivo
 
